@@ -1,0 +1,7 @@
+site_name: Desigo Modular Operation
+theme:
+  name: readthedocs
+repo_url: https://github.com/brettennis/desigo-modular-operation
+nav:
+  - 'index.md'
+  - 'operations.md'

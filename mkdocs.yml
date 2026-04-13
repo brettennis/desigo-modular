@@ -6,3 +6,7 @@ site_url: https://brettennis.github.io/desigo-modular/
 nav:
   - 'index.md'
   - 'operations.md'
+plugins:
+  - to-pdf:
+      cover: false
+      output_path: desigo_modular.pdf

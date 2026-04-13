@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Desigo Modular Operation</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Desigo Modular Operation";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Desigo Modular Operation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Desigo Modular Operation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reading-the-main-leds">Reading the main LEDs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-the-main-display">Using the main display</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#event-types">Event types</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="operations/">More Operations</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Desigo Modular Operation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Desigo Modular Operation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/brettennis/desigo-modular-operation/edit/master/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="desigo-modular-operation">Desigo Modular Operation</h1>
+<h4 id="contents">Contents</h4>
+<ol>
+<li><a href="#reading-the-main-leds">Reading the main LEDs</a></li>
+<li><a href="#using-the-main-display">Using the main display</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+<h2 id="reading-the-main-leds">Reading the main LEDs</h2>
+<p>POWER - glows steady green to indicate that the AC power is on; blinks when the System is on battery backup.</p>
+<p>AUDIBLES - Audibles <strong>ON</strong> or Audibles <strong>SILENCED</strong> glows steady yellow to indicate the activation of horns/strobes.</p>
+<p>PARTIAL SYSTEM DISABLED - glows steady yellow when any module/device is disabled or the system is in walktest.</p>
+<p>CPU FAIL - glows steady yellow when a main processor failure occurs in the system. See the section on <a href="#troubleshooting">Troubleshooting</a> to trigger a panel Hard Reset.</p>
+<h2 id="using-the-main-display">Using the main display</h2>
+<p>When an event occurs in the system, the display enters the Alert or Firefighter’s mode automatically. Events are displayed in the following layout:</p>
+<pre><code class="language-md">|-------------------------------------------------------------------|
+| Event Custom Message                                              |
+|-------------------------------------------------------------------|
+| Node Number | Time or Date | Device Type | Event Type | IN or OUT |
+|-------------|--------------|-------------|------------|-----------|
+</code></pre>
+<p>Press the <strong>More Info+</strong> button to display a screen showing details relating to the selected event. Return to the previous screen by pressing <strong>ESC</strong>.</p>
+<ul>
+<li><em>Note: Return to the main event list at any time by pressing <strong>Menu</strong> then <strong>Alarm</strong>.</em></li>
+</ul>
+<h4 id="event-types">Event types</h4>
+<p>The system can report four types of events: <strong>Alarm</strong>, <strong>Supervisory</strong>, <strong>Security</strong>, and <strong>Trouble</strong>. They are each shown on separate pages of Alert mode. Use the four soft keys above the display to navigate between them.</p>
+<p>ALARM - The system has detected an active fire. Horns and strobes will activate in the building where the event is detected. A soft key below the display will appear labeled <strong>Silence</strong> to silence the horns.</p>
+<p>SUPERVISORY - The system has detected an issue with a system it is monitoring. This includes the tampering of sprinkler valves and certain fire pump conditions.</p>
+<p>SECURITY - This system is not set up to report security events.</p>
+<p>TROUBLE - There is an issue with the fire system. Missing devices, ground faults, and battery failures are examples of trouble-causing events.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>The operator can trigger either a <strong>Soft Reset</strong> or a <strong>Hard Reset</strong> to reset the panel and display.</p>
+<p>SOFT RESET - Press the soft key labeled <strong>Reset</strong> when on the main event screen. Any alarm event will temporarily be cleared, and then return if the device continues to report an alarm. Troubles labeled <strong>OUT</strong> will be cleared, while troubles labeled <strong>IN</strong> will return. This operation should take no more than 10 seconds.</p>
+<p>HARD RESET - A hard reset can sometimes correct strange panel behavior. Open the inner door that houses the display. A small button labeled <strong>RESET</strong> can be found on the rear of the display, near the lower right corner. Press and hold this button for 3 to 5 seconds until a sustained beep is heard. A panel may take 1 to 2 minutes to reset, and up to 10 minutes to report all troubles accurately.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="operations/" class="btn btn-neutral float-right" title="More Operations">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/brettennis/desigo-modular-operation" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="operations/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-04-13 03:23:44.811055+00:00
+-->

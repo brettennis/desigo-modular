@@ -2,6 +2,7 @@ site_name: Desigo Modular Operation
 theme:
   name: readthedocs
 repo_url: https://github.com/brettennis/desigo-modular-operation
+site_url: https://brettennis.github.io/desigo-modular/
 nav:
   - 'index.md'
   - 'operations.md'

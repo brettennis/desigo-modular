@@ -60,6 +60,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#initiating-a-walktest">Initiating a walktest</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#walktest-ending-sequence">Walktest ending sequence</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -96,6 +98,7 @@
 <li><a href="#disarm-outputs">Disarm outputs</a></li>
 <li><a href="#disarm-devices">Disarm devices</a></li>
 <li><a href="#access-event-history">Access event history</a></li>
+<li><a href="#walktest-mode">Walktest mode</a></li>
 </ol>
 <h2 id="disarm-outputs">Disarm outputs</h2>
 <p>Disarm functions allow the disabling of horns/strobes, AHU shutdowns, elevator recall, or elevator shunt trip activation. A panel's disarm functions are local only, and will not affect other buildings.</p>
@@ -141,11 +144,13 @@
 <h2 id="walktest-mode">Walktest mode</h2>
 <p>Walktest is an alternative method of disarming outputs for the purpose of testing devices. Outputs such as horns/strobes or HVAC shutdown relays can be disabled on the scale of an entire building, or a specific geographic area, if geographic groups have been programmed. At this site, geographic groups have been programmed only for the Administration building.</p>
 <h4 id="walktest-vs-disarm-functions">Walktest vs. Disarm functions</h4>
-<p>Disarm functions (see above: <a href="#disarm-outputs">Disarm outputs</a>) achieve similar results to activating walktest mode for a building, with some key differences:
-- Walktest mode will automatically time-out after 4 hours, unless manually extended at the panel. Disarm functions, however, will remain active until functions are rearmed. 
-- Activation of a walktested device will not report to remote annunciators installed in master control rooms. When a disarm function is enabled, all devices will report to annunciators as normal.
-- While disarm functions can target a building, walktest mode can target a specific geographic area. For example, the Warehouse area of the Administration building can be put in walktest, leaving devices in Segregation to report alarms as normal.
-- An area in walktest mode can be configured to activate audibles for five seconds upon activation of a device. This allows a user to test functionality of devices in the field without a person watching the panel for messages.</p>
+<p>Disarm functions (see above: <a href="#disarm-outputs">Disarm outputs</a>) achieve similar results to activating walktest mode for a building, with some key differences:</p>
+<ul>
+<li>Walktest mode will automatically time-out after 4 hours, unless manually extended at the panel. Disarm functions, however, will remain active until functions are rearmed. </li>
+<li>Activation of a walktested device will not report to remote annunciators such as those installed in control rooms or networked panels in other buildings.</li>
+<li>While disarm functions can target a building, walktest mode can target a specific geographic area. For example, the Warehouse area of the Administration building can be put in walktest, leaving devices in Segregation to report alarms as normal.</li>
+<li>An area in walktest mode can be configured to activate audibles for five seconds upon activation of a device. This allows a user to test functionality of devices in the field without a person watching the panel for messages.</li>
+</ul>
 <h4 id="initiating-a-walktest">Initiating a walktest</h4>
 <ul>
 <li>Navigate to Maintenance menu by pressing <strong>Menu</strong> then <strong>Maint</strong></li>
@@ -168,10 +173,11 @@
 <li>Navigate to main event list: <strong>Menu</strong> then <strong>Alarm</strong></li>
 </ul>
 <p>Devices activated in walktested areas will report to the panel for 30 seconds, and be stored in a report indefinitely. This report can be retrieved at any time by navigating to <strong>Menu</strong>, <strong>Report</strong>, <strong>Status</strong>, <strong>Walktest</strong>.</p>
-<p>A walktest will remain active for 4 hours. A user can extend the walktest at any time by pressing <strong>Menu</strong>, <strong>Maint</strong>, <strong>Walktest</strong>, and <strong>Extend</strong>. The walktest can be canceled by pressing <strong>Disable</strong>.</p>
+<p>A walktest will remain active for 4 hours. A user can extend the walktest at any time by pressing <strong>Menu</strong>, <strong>Maint</strong>, <strong>Walktest</strong>, and <strong>Extend</strong>.</p>
+<h4 id="walktest-ending-sequence">Walktest ending sequence</h4>
 <p>Five minutes before the end of the walktest, a 15-second audible activation occurs. Forty-five seconds before the end of the Walktest, a 45-second audible activation occurs. If <strong>No Bells</strong> has been configured, only strobes will be activated. 
     - <em>Note: Any devices still in alarm at the time the walktest expires will cause the system to go into alarm as normal. Do not test devices after the five-minute warning.</em></p>
-<p>When the Walktest is completed, acknowledge the <em>WALKTEST ACTIVATED</em> trouble and reset the panel.</p>
+<p>A walktest can be canceled prematurely by pressing <strong>Menu</strong>, <strong>Maint</strong>, <strong>Walktest</strong>, and <strong>Disable</strong>. When the walktest is completed, acknowledge the WALKTEST ACTIVATED trouble and reset the panel.</p>
               
             </div>
           </div><footer>

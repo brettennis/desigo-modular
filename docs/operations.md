@@ -79,6 +79,7 @@ A walktest will remain active for 4 hours. A user can extend the walktest at any
 #### Walktest ending sequence
 
 Five minutes before the end of the walktest, a 15-second audible activation occurs. Forty-five seconds before the end of the Walktest, a 45-second audible activation occurs. If **No Bells** has been configured, only strobes will be activated. 
-    - _Note: Any devices still in alarm at the time the walktest expires will cause the system to go into alarm as normal. Do not test devices after the five-minute warning._
+
+- _Note: Any devices still in alarm at the time the walktest expires will cause the system to go into alarm as normal. Do not test devices after the five-minute warning._
 
 A walktest can be canceled prematurely by pressing **Menu**, **Maint**, **Walktest**, and **Disable**. When the walktest is completed, acknowledge the WALKTEST ACTIVATED trouble and reset the panel.
